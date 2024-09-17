@@ -15,7 +15,9 @@ builder.Services.AddSwaggerGen();
 // Dependency injection
 builder.Services.AddSingleton<IEnderecoService, EnderecoService>();
 builder.Services.AddSingleton<IBrasilApi, BrasilApiRest>();
+builder.Services.AddSingleton<IRedeFrotaApi, RedeFrotaApiRest>();
 builder.Services.AddAutoMapper(typeof(EnderecoMapping));
+builder.Services.AddAutoMapper(typeof(RedeFrotaMapping));
 
 var app = builder.Build();
 
