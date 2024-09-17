@@ -14,7 +14,7 @@ namespace WebApi.Controllers
             _redeFrotaService = redeFrotaService;
         }
 
-        [HttpPost("&cliente={cliente}&{dta_inicio}&{dta_final}")]
+        [HttpPost("&cliente={cliente}&dta_inicio={dta_inicio}&dta_final={dta_final}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

@@ -13,9 +13,9 @@ namespace WebApi.Rest
             /* https://prd-redefrota-apim.azure-api.net/inteligencia/FormatoGestranTransacao?cliente=17595&dta_inicio=2024-09-08T18:43:13&dta_final=2024-09-08T18:43:13
             */
             var request = new HttpRequestMessage(HttpMethod.Post, $"https://prd-redefrota-apim.azure-api.net/inteligencia/FormatoGestranTransacao?" +
-                $"cliente={cliente}" +
-                $"&dta_inicio={dta_inicio}" +
-                $"&dta_final{dta_final}");
+                "cliente={cliente}" +
+                "&dta_inicio={dta_inicio}" +
+                "&dta_final={dta_final}");
 
             var response = new ResponseGenerico<RedeFrotaResponse>();
             using (var client = new HttpClient())

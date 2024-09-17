@@ -15,6 +15,7 @@ namespace WebApi.Services
             _redeFrotaApi = redeFrotaApi;
         }
 
+        //criar o redefrotaresponse
         public async Task<ResponseGenerico<RedeFrotaResponse>> BuscarRedefrota(string cliente, string dta_inicio, string dta_final)
         {
             var redeFrota = await _redeFrotaApi.BuscarPorData(cliente, dta_inicio, dta_final);
